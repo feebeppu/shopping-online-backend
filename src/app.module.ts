@@ -8,6 +8,7 @@ import { CityModule } from './city/city.module';
 import { CityEntity } from './city/entities/city.entity';
 import { StateEntity } from './state/entities/state.entity';
 import { AddressEntity } from './address/entities/address.entity';
+
 import { CacheModule } from './cache/cache.module';
 import { AddressModule } from './address/address.module';
 import { AuthModule } from './auth/auth.module';
@@ -16,8 +17,17 @@ import { RolesGuard } from './guards/roles.guard';
 import { JwtModule } from '@nestjs/jwt';
 import { CategoryModule } from './category/category.module';
 import { ProductModule } from './product/product.module';
+import { CategoryEntity } from './category/entities/category.entity';
+import { ProductEntity } from './product/entities/product.entity';
 
-export const entities = [UserEntity, CityEntity, StateEntity, AddressEntity];
+export const entities = [
+  UserEntity,
+  CityEntity,
+  StateEntity,
+  AddressEntity,
+  CategoryEntity,
+  ProductEntity,
+];
 
 @Module({
   imports: [

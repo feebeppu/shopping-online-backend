@@ -4,5 +4,8 @@ export class ListCategoriesDTO {
   id: number;
   name: string;
 
-  constructor(categoryEntity: CategoryEntity) {}
+  constructor(categoryEntity: CategoryEntity) {
+    this.id = categoryEntity.id;
+    this.name = categoryEntity.categoryName;
+  }
 }

@@ -17,6 +17,9 @@ export class ProductEntity {
   @Column({ name: 'name', nullable: false })
   productName: string;
 
+  @Column({ name: 'category_id', nullable: false })
+  categoryId: number;
+
   @Column({ name: 'price', nullable: false })
   price: number;
 

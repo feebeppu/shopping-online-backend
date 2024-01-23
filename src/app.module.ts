@@ -19,6 +19,10 @@ import { CategoryModule } from './category/category.module';
 import { ProductModule } from './product/product.module';
 import { CategoryEntity } from './category/entities/category.entity';
 import { ProductEntity } from './product/entities/product.entity';
+import { CartModule } from './cart/cart.module';
+import { CartProductModule } from './cart-product/cart-product.module';
+import { CartEntity } from './cart/entities/cart.entity';
+import { CartProductEntity } from './cart-product/entities/cart-product.entity';
 
 export const entities = [
   UserEntity,
@@ -27,6 +31,8 @@ export const entities = [
   AddressEntity,
   CategoryEntity,
   ProductEntity,
+  CartEntity,
+  CartProductEntity,
 ];
 
 @Module({
@@ -54,6 +60,8 @@ export const entities = [
     JwtModule,
     CategoryModule,
     ProductModule,
+    CartModule,
+    CartProductModule,
   ],
   controllers: [],
   providers: [
